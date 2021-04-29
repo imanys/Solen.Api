@@ -1,0 +1,80 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/Src/Main/Solen"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  target-branch: develop
+  ignore:
+  - dependency-name: FluentValidation
+    versions:
+    - 10.0.0
+    - 10.0.1
+    - 10.0.2
+    - 10.0.3
+    - 10.0.4
+    - 9.4.0
+    - 9.5.0
+    - 9.5.1
+    - 9.5.2
+    - 9.5.3
+    - 9.5.4
+  - dependency-name: FluentValidation.AspNetCore
+    versions:
+    - 10.0.0
+    - 10.0.1
+    - 10.0.2
+    - 10.0.3
+    - 10.0.4
+    - 9.4.0
+    - 9.5.0
+    - 9.5.1
+    - 9.5.2
+    - 9.5.3
+    - 9.5.4
+  - dependency-name: Microsoft.EntityFrameworkCore.Tools
+    versions:
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+  - dependency-name: Microsoft.EntityFrameworkCore.Sqlite
+    versions:
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+  - dependency-name: Microsoft.EntityFrameworkCore.Relational
+    versions:
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+  - dependency-name: Microsoft.AspNetCore.Mvc.Testing
+    versions:
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+  - dependency-name: Microsoft.EntityFrameworkCore
+    versions:
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+  - dependency-name: Microsoft.AspNetCore.Authentication.JwtBearer
+    versions:
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+  - dependency-name: Microsoft.AspNetCore.Mvc.NewtonsoftJson
+    versions:
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+  - dependency-name: Microsoft.EntityFrameworkCore.Design
+    versions:
+    - 5.0.2
+    - 5.0.3
+    - 5.0.4
+  - dependency-name: IdentityModel
+    versions:
+    - 5.0.0
+    - 5.0.1
